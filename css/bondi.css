@@ -1,0 +1,202 @@
+/* Start Global CSS Code */
+:root{
+    --main-color: #19283f;
+    --secondery-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* End Global CSS Code */
+/* __________________________________________ */
+/* Start Global Component */
+.main-btn{
+    background-color: var(--red-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    color: var(--yellow-color);
+}
+.main-btn:hover{
+    color: #fff;
+}
+.color-green{
+    color: var(--secondery-color);
+}
+.color-yellow{
+    color: var(--yellow-color);
+}
+.fs-lg{
+    font-size: 70px;
+}
+.main-title::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    background-color: var(--secondery-color);
+    width: 120px;
+    height: 2px;
+}
+/* End Global Component */
+/* Start Header Section  */
+.navbar{
+    background-color: var(--main-color);
+}
+.navbar .container .navbar-collapse .nav-item>a{
+    color: #fff;
+}
+.navbar .container .navbar-collapse .active,
+.navbar .container .navbar-collapse .nav-item .nav-link:hover,
+.navbar .container .navbar-collapse .nav-item .nav-link:focus{
+    color: var(--secondery-color) !important;
+}
+.navbar .container .navbar-collapse button svg{   
+    padding: 11px 0 11px 10px ;
+    color: var(--secondery-color);
+    border-left:1px solid var(--secondery-color) ;
+}
+.navbar .container .navbar-collapse .search{
+    height: 56px;
+    background-color: var(--main-color);
+    border: none;
+}
+.navbar .container .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .container .navbar-toggler[aria-expanded="true"]{
+    border: var(--secondery-color) solid 1px;
+}
+/* End Header Section  */
+/* Start Landing Section */
+.landing{
+    background-color: var(--main-color);
+    height: calc(100vh - 72px);
+}
+/* End Landing Section */
+/* __________________________________________ */
+/* Start Features  Section */
+.number{
+    color: var(--section-color);
+    font-size: 200px;
+}
+.icon-holder .icon{
+    transform: translate(-50%,-100%);
+    -webkit-transform: translate(-50%,-100%);
+    -moz-transform: translate(-50%,-100%);
+    -ms-transform: translate(-50%,-100%);
+    -o-transform: translate(-50%,-100%);
+}
+/* End Features  Section */
+/* ______________________________________________ */
+/* Start our-work  Section */
+.our-work{
+    background-color: var(--section-color);
+}
+.our-work .btn:hover{
+    color: var(--red-color);
+}
+.our-work .container .row .image {
+    position: relative;
+}
+.our-work .container .row .image::before{
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    left: 0px;
+    top:4.5px;
+    width:0 ;
+    height: calc(100% - 9px) ;
+    background-color:#33d1cc84;
+    z-index: 112;
+    transition:all 0.3s ;
+    -webkit-transition:all 0.3s ;
+    -moz-transition:all 0.3s ;
+    -ms-transition:all 0.3s ;
+    -o-transition:all 0.3s ;
+}
+.our-work .container .row .image:hover::before{
+    content: attr(data-work);
+    width:calc(100% - 9px) ;
+    left:4.5px;
+}
+/* End our-work  Section */
+/* ______________________________________________ */
+/* Start stuff  Section */
+.stuff-text{
+    width: 500px;
+}
+/* End stuff  Section */
+/* ______________________________________________ */
+/* Start team Section */
+.team{
+    background-color: var(--section-color);
+}
+.team h2{
+    color: var(--yellow-color);
+}
+.team .container h4{
+    background-color: var(--secondery-color);
+}
+/* End team Section */
+/* ______________________________________________ */
+/* Start Project Section */
+.project{
+    background-color: var(--main-color);
+}
+/* End Project Section */
+/* ______________________________________________ */
+/* Start subscribe Section */
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe input[type="email"]{
+    background-color: var(--yellow-color);
+    caret-color: var(--secondery-color);
+    color: #fff;
+}
+.subscribe input[type="email"]::placeholder{
+    color: #fff;
+}
+.subscribe input[type="email"]:focus{
+    outline: none;
+}
+.subscribe input[type="submit" ]{
+    color: var(--yellow-color);
+    background-color: var(--main-color);
+}
+/* End subscribe Section */
+/* ______________________________________________ */
+/* Start footer Section */
+footer{
+    background-color: var(--main-color);
+}
+.fa-facebook{
+    background-color: #1877f2;
+}
+.fa-twitter{
+    background-color: #1da1f2;
+}
+.fa-linkedin{ 
+    background-color: #0077b5;
+}
+.fa-youtube{
+    background-color: red;
+}
+/* End footer Section */
